@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../dist/images/logo/favicon.png" />
+  <!-- Favicon icon -->
+  <title>Grammer</title>
+  <!-- Common style CSS -->
+  <link rel="stylesheet" href="../assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.theme.green.min.css">
+  <link href="../dist/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ------------------------------------- -->
+  <!-- Header Start -->
+  <!-- ------------------------------------- -->
+  <header class="fixed-top header-bg header">
+    <div class="container-fluid max-width-lg">
+      <nav class="navbar navbar-expand-lg py-1 navbar-light">
+        <a class="navbar-brand py-4" href="javascript:void(0)">
+          <img src="../dist/images/logo/logo.svg" alt=""></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-center text-center w-100">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item single-item">
+                <a class="nav-link text-dark" href="javascript:void(0)">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown single-item">
+                <a class="nav-link text-dark" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Courses <i class="ms-1 fas fa-chevron-down fs-1"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="javascript:void(0)">Course list</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)">Course Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown single-item">
+                <a class="nav-link text-dark" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog <i class="ms-1 fas fa-chevron-down fs-1"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./blog-detail.html">blog</a></li>
+                  <li><a class="dropdown-item" href="./blog-grid.html">Blog-Grid</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="javascript:void(0)">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Sign-In"
+              class="text-nowrap ms-auto btn btn-primary text-white px-3">
+              Sign In
+            </a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  <!-- ------------------------------------- -->
+  <!-- Header End -->
+  <!-- ------------------------------------- -->
+
+  <!-- ------------------------------------- -->
+  <!-- Responsive Sidebar Start -->
+  <!-- ------------------------------------- -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel" class="mb-0">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <a href="javascript:void(0)"
+            class="align-items-center px-0 fs-5 d-flex btn btn-toggle justify-content-between w-100 py-2">
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <button
+            class="btn btn-toggle align-items-center px-0 collapsed fs-5 d-flex justify-content-between w-100 py-2"
+            data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="true">
+            <span>Courses</span>
+            <div class="ms-auto">
+              <i class="fas fa-chevron-down fs-2"></i>
+            </div>
+          </button>
+          <div class="collapse" id="pages-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li class="py-2 px-2"><a href="javascript:void(0)" class="link-dark rounded">Course
+                  List</a></li>
+              <li class="py-2 px-2"><a href="javascript:void(0)" class="link-dark rounded">Course
+                  Detail</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button
+            class="btn btn-toggle align-items-center px-0 collapsed fs-5 d-flex justify-content-between w-100 py-2"
+            data-bs-toggle="collapse" data-bs-target="#blog-collapse" aria-expanded="true">
+            <span>Blog</span>
+            <div class="ms-auto">
+              <i class="fas fa-chevron-down fs-2"></i>
+            </div>
+          </button>
+          <div class="collapse" id="blog-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li class="py-2 px-2"><a href="javascript:void(0)" class="link-dark rounded">Blog</a></li>
+              <li class="py-2 px-2"><a href="javascript:void(0)" class="link-dark rounded">Blog-Grid</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a href="javascript:void(0)"
+            class="btn btn-toggle align-items-center px-0 collapsed fs-5 d-flex justify-content-between w-100 py-2">Contact</a>
+        </li>
+      </ul>
+
+      <div class="text-center">
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Sign-In"
+          class="text-nowrap ms-auto btn btn-primary text-white px-3">
+          Sign In
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Responsive Sidebar End -->
+  <!-- ------------------------------------- -->
+
+  <div class="main-wrapper overflow-hidden">
+
+    <!-- ------------------------------------- -->
+    <!-- Homebanner Start -->
+    <!-- ------------------------------------- -->
+    <section class="py-lg-13 py-6 mt-7">
+      <div class="container-fluid max-width-lg">
+        <div class="row justify-content-between align-items-center mb-lg-4">
+          <div class="col-lg-6">
+            <div class="text-center text-lg-start">
+              <h1 class="mb-4 pb-2 fs-23 lh-xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                Learning is key to your
+                success. Get custom
+                designed courses</h1>
+
+              <p class="fs-6 text-lighten-muted mb-4 pb-3" data-aos="fade-up" data-aos-delay="400"
+                data-aos-duration="1000">Embed powerful financial features into your product, Launch in weeks.
+              </p>
+
+              <div class="d-block d-sm-flex align-items-center justify-content-center justify-content-lg-start"
+                data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="me-0 me-sm-3 mb-3 mb-sm-0">
+                  <button class="btn btn-primary start-btn text-white">Get Started <i
+                      class="ms-1 fas fa-chevron-right fs-2 fw-bold"></i></button>
+                </div>
+                <div class="video-detail rounded-1 shadow-lg d-inline-block">
+                  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#working-video">
+                    <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+                      <button class="btn btn-info video-btn px-4">
+                        <i class="fs-2 fas fa-play text-white"></i>
+                      </button>
+                      <div class="text-lighten-muted px-4">
+                        How it works
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="../dist/images/cource/home-banner.jpg" class="card-img-top mt-lg-0 mt-3" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Homebanner End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Category Start -->
+    <!-- ------------------------------------- -->
+    <section class="category py-6 py-md-13">
+      <div class="container-fluid max-width-lg">
+        <div class="row">
+          <div class="col-lg-3">
+            <h1 class="mb-0 fs-10 text-center text-sm-start" data-aos="fade-right" data-aos-delay="200"
+              data-aos-duration="1000">Explore by categories</h1>
+          </div>
+        </div>
+
+        <div class="owl-carousel categories owl-theme">
+          <div class="item">
+            <div class="card bg-transparent mb-0">
+              <div class="card-body">
+                <img src="../dist/images/cource/heart.png" class="mb-4 pb-2" alt="">
+                <h4>Loved by
+                  thousands</h4>
+                <p class="text-lighten-muted mb-0">Lorem ipsum dolor sit amet,
+                  sed do eiusmod tempor
+                  magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card bg-transparent mb-0">
+              <div class="card-body">
+                <img src="../dist/images/cource/lock.png" class="mb-4 pb-2" alt="">
+                <h4>Powerful
+                  security</h4>
+                <p class="text-lighten-muted mb-0">Lorem ipsum dolor sit amet,
+                  sed do eiusmod tempor
+                  magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card bg-transparent mb-0">
+              <div class="card-body">
+                <img src="../dist/images/cource/square.png" class="mb-4 pb-2" alt="">
+                <h4>Semantic
+                  coding</h4>
+                <p class="text-lighten-muted mb-0">Lorem ipsum dolor sit amet,
+                  sed do eiusmod tempor
+                  magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card bg-transparent mb-0">
+              <div class="card-body">
+                <img src="../dist/images/cource/drop.png" class="mb-4 pb-2" alt="">
+                <h4>Separate
+                  components</h4>
+                <p class="text-lighten-muted mb-0">Lorem ipsum dolor sit amet,
+                  sed do eiusmod tempor
+                  magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card rounded-3 mb-0">
+              <div class="card-body">
+                <img src="../dist/images/cource/loading.png" class="mb-4 pb-2" alt="">
+                <h4>Fast loading pages</h4>
+                <p class="text-lighten-muted mb-0">Lorem ipsum dolor sit amet,
+                  sed do eiusmod tempor
+                  magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Category End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Course Start -->
+    <!-- ------------------------------------- -->
+    <section class="course bg-light-info py-6 py-md-13 py-lg-11">
+      <div class="container-fluid max-width-lg position-relative">
+        <div class="row align-items-center justify-content-between mb-7 mt-lg-2">
+          <div class="col-lg-4">
+            <h1 class="fs-10" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+              Courses Listing
+            </h1>
+          </div>
+          <div class="col-lg-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-lg-end mb-0">
+                <li class="breadcrumb-item">
+                  <a class="text-lighten-muted fs-6" href="javascript:void(0)">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item text-dark fs-6 active" aria-current="page">Courses</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row mb-lg-2">
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <div class="position-relative">
+                  <img src="../dist/images/cource/bootstrap.png" class="card-img-top" alt="">
+                  <div class="course-badge position-absolute top-0 start-0 mt-3 ms-2">
+                    <span class="bg-danger text-white px-2 py-1 rounded-3">Hot</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(85,229)</span>
+                  </div>
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">Google Flutter</p>
+                  <p class="h6 link-primary text-dark fs-5 pb-2">Flutter & Firebase: Build a
+                    Complete App for iOS &
+                    Android
+                  </p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted d-flex mb-0 align-items-center">
+                        <i class="far fa-clock fs-6 me-2 pe-1"></i>
+                        8 lessons
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted d-flex mb-0 align-items-center">
+                        <i class="fas fa-book fs-6 me-2 pe-1"></i>
+                        18h 20m
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-1.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Dr. Angela Burr</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <div class="position-relative">
+                  <img src="../dist/images/cource/python.png" class="card-img-top" alt="">
+                  <div class="course-badge position-absolute top-0 start-0 mt-3 ms-2">
+                    <span class="bg-success text-white px-2 py-1 rounded-3">Bestseller</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(23,229)</span>
+                  </div>
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">Machine Learning</p>
+                  <p class="h6 text-dark link-primary fs-5 pb-2">
+                    Python for Data Science and Machine Learning Bootcamp
+                  </p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="far fa-clock fs-6 me-2 pe-1"></i>
+                        8 lessons
+                      </p>
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="fas fa-book fs-6 me-2 pe-1"></i>
+                        18h 20m
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-2.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Mark Freeman</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <img src="../dist/images/cource/vuejs.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(56,390)</span>
+                  </div>
+
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">AWS Certification</p>
+                  <p class="h6 text-dark link-primary fs-5 pb-2">
+                    Ultimate AWS Certified Developer 2023 - NEW!
+                  </p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="far fa-clock fs-6 me-2 pe-1"></i>
+                        8 lessons
+                      </p>
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="fas fa-book fs-6 me-2 pe-1"></i>
+                        18h 20m
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-1.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Arya B. Rao</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <img src="../dist/images/cource/flutter.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(85,229)</span>
+                  </div>
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">Google Flutter</p>
+                  <p class="h6 fs-5 text-dark link-primary pb-2">
+                    Flutter & Firebase: Build a Complete App for iOS & Android
+                  </p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="far fa-clock fs-6 me-2 pe-1"></i>
+                        8 lessons
+                      </p>
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="fas fa-book fs-6 me-2 pe-1"></i>18h 20m
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-1.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Dr. Angela Burr</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <img src="../dist/images/cource/js.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(23,229)</span>
+                  </div>
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">Machine Learning</p>
+                  <p class="h6 text-dark link-primary fs-5 pb-2">
+                    Python for Data Science and
+                    Machine Learning Bootcamp
+                  </p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center">
+                        <i class="far fa-clock fs-6 me-2 pe-1"></i>
+                        8 lessons
+                      </p>
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center"><i
+                          class="fas fa-book fs-6 me-2 pe-1"></i>18h 20m
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-2.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Mark Freeman</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow overflow-hidden" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
+              <a href="javascript:void(0)">
+                <img src="../dist/images/cource/jquery.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-4">
+                    <h6 class="mb-0 me-2">4.7</h6>
+                    <ul class="d-flex mb-0 list-unstyled">
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star text-warning"></i>
+                      </li>
+                      <li class="me-1">
+                        <i class="fas fa-star-half text-warning"></i>
+                      </li>
+                    </ul>
+                    <span class="text-lighten-muted fs-3">(56,390)</span>
+                  </div>
+
+                  <p class="fs-3 fw-normal text-lighten-muted mb-2">AWS Certification</p>
+                  <p class="h6 text-dark link-primary fs-5 pb-2">Ultimate AWS Certified
+                    Developer 2023
+                    - NEW!</p>
+                  <ul class="hstack d-flex gap-3 mt-4 mb-4 pb-2 text-lighten-muted list-unstyled">
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center"><i
+                          class="far fa-clock fs-6 me-2 pe-1"></i>8
+                        lessons</p>
+                    </li>
+                    <li class="d-none d-sm-block">/</li>
+                    <li>
+                      <p class="text-lighten-muted mb-0 d-flex align-items-center"><i
+                          class="fas fa-book fs-6 me-2 pe-1"></i>18h 20m</p>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="hstack">
+                      <img src="../dist/images/profile/profile-1.png" class="me-2 pe-1" alt="">
+                      <h6 class="mb-0">Arya B. Rao</h6>
+                    </div>
+                    <div>
+                      <span class="text-decoration-line-through text-dark fw-normal fs-3 op-4">$114.99</span>
+                      <span class="text-primary fw-normal fs-4">$99.99</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Course End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Earn Start -->
+    <!-- ------------------------------------- -->
+    <section class="py-6 py-md-13 py-lg-10">
+      <div class="container-fluid max-width-lg">
+        <div class="row align-items-center justify-content-lg-between justify-content-center mt-lg-4">
+          <div class="col-lg-5 col-md-8 col-sm-9">
+            <img src="../dist/images/cource/earn.png" class="card-img-top" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="mt-4 mt-lg-0 text-center text-lg-start" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="1000">
+              <h1 class="mb-4 pb-3">Become an instructor
+                and earn more</h1>
+              <p class="fs-5 text-lighten-muted mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. </p>
+              <button class="btn btn-primary start-btn text-white">Start teaching today <i
+                  class="ms-1 fas fa-chevron-right fs-2 fw-bold"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Earn End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Company Start -->
+    <!-- ------------------------------------- -->
+    <section class="py-6 py-md-13">
+      <div class="container-fluid max-width-xl">
+        <div class="row">
+          <p class="text-center mb-4 pb-2 fs-6 text-lighten-muted">Many schools, universities & online programs useing
+            landing
+            pro
+          <div class="col-12">
+            <div class="company-icon bg-light-info rounded-4 py-15 position-relative overflow-hidden">
+              <div class="owl-carousel owl-theme company-logo-slider">
+                <div class="item">
+                  <a href="#"><img src="../dist/images/cource/clickup.png" alt="" class="mx-auto"></a>
+                </div>
+                <div class="item">
+                  <a href="#"><img src="../dist/images/cource/fast.png" alt="" class="mx-auto"></a>
+                </div>
+                <div class="item">
+                  <a href="#"><img src="../dist/images/cource/slack.png" alt="" class="mx-auto"></a>
+                </div>
+                <div class="item">
+                  <a href="#"><img src="../dist/images/cource/stripe.png" alt="" class="mx-auto"></a>
+                </div>
+                <div class="item">
+                  <a href="#"><img src="../dist/images/cource/tc.png" alt="" class="mx-auto"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Company End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Experts Start -->
+    <!-- ------------------------------------- -->
+    <section class="expert pb-xl-10 pt-xl-12">
+      <div class="container-fluid max-width-lg">
+        <div class="row justify-content-lg-between justify-content-center align-items-center">
+          <div class="col-lg-4">
+            <div class="text-center text-lg-start" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <h1 class="mb-4 pb-2">Learn fast from experts</h1>
+              <p class="text-lighten-muted mb-3 mb-lg-5">Take classes on the go with the landing pro. Download to watch
+                on the
+                go.</p>
+              <a href="javascript:void(0)" class="fs-6 fw-bold text-dark">Get our mobile app</a>
+              <div class="d-flex mt-3 pt-1 justify-content-center justify-content-lg-start">
+                <a href="javascript:void(0)">
+                  <img src="../dist/images/download/apple-1.png" class="me-4" alt="">
+                </a>
+                <a href="javascript:void(0)">
+                  <img src="../dist/images/download/gp-1.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="mt-15 mt-lg-0 text-center">
+              <img src="../dist/images/cource/expert.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Experts End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Dream Job Start -->
+    <!-- ------------------------------------- -->
+    <section class="py-6 py-md-13 py-lg-10 job">
+      <div class="container-fluid max-width-xl">
+        <div class="bg-light-info rounded-5 overflow-hidden px-5 px-xl-10 py-15">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="job-content text-center text-lg-start mb-15 mb-lg-0">
+                <h1 class="mb-4 pb-2">Start learning & land to your dream job</h1>
+                <p class="fs-5 text-lighten-muted mb-4 pb-2">Build career skills with professional certificates from top
+                  companies.</p>
+                <button class="btn btn-primary start-btn text-white">Start learning today <i
+                    class="ms-1 fas fa-chevron-right fs-2 fw-bold"></i></button>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="dream-img text-center text-md-start position-relative mt-lg-n5">
+                <img src="../dist/images/cource/dream-job2.png" class="w-100" alt="dream job">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Dream Job End -->
+    <!-- ------------------------------------- -->
+
+  </div>
+
+  <!-- ------------------------------------- -->
+  <!-- Footer Start -->
+  <!-- ------------------------------------- -->
+  <footer class="footer-dark bg-themecolor-dark position-relative overflow-hidden">
+    <div class="container-fluid max-width-lg">
+      <div class="footer-border pt-5 pb-6">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <img src="../dist/images/logo/white-logo.svg" alt="">
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-block d-md-flex mt-4 mt-md-0 align-items-center">
+              <span class="text-white text-nowrap me-4 pe-3">Sign up for updates</span>
+              <div class="input-group rounded-2 bg-input-dark">
+                <input type="text"
+                  class="rounded-3 border-0 text-lighten-muted px-3 form-control bg-transparent shadow-none"
+                  placeholder="Enter your email address">
+                <button class="btn px-3" type="button"><i
+                    class="fs-5 text-lighten-muted fas fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-border py-5">
+        <div class="row">
+          <div class="col-lg-2 col-6">
+            <h6 class="text-white mb-3 fw-medium">Explore</h6>
+            <ul class="list-unstyled">
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">About</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Pricing</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Blog</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Careers <span
+                    class="bg-success text-white fs-3 px-2 py-1 ms-2 rounded-3">hiring!</span>
+                </a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h6 class="text-white mb-3 fw-medium">Features</h6>
+            <ul class="list-unstyled">
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Online Payments</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Financial Projections</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Bookkeeping</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Banking</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h6 class="text-white mb-3 fw-medium">Resources</h6>
+            <ul class="list-unstyled">
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Documentation</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Integrations</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">API Reference</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Support</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h6 class="text-white mb-3 fw-medium">Platform</h6>
+            <ul class="list-unstyled">
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Infrastructure</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Certifications</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Licenses</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Terms and conditions</a></li>
+              <li class="py-1"><a href="#" class="footer-link text-lighten-muted">Legal</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="text-lighten-muted mb-4 d-flex align-items-start fs-4">
+              <i class="fas fa-map-marker-alt me-2 pe-1 op-7 fs-6"></i>
+              221b Baker St, London NW1 6XE, United Kingdom
+            </div>
+
+            <div class="text-lighten-muted mb-4 d-flex align-items-start fs-4">
+              <i class="fas fa-phone me-2 pe-1 op-7 fs-6"></i>
+              +1 (123) 123 1234
+            </div>
+
+            <div class="text-lighten-muted mb-4 d-flex align-items-start fs-4">
+              <i class="far fa-envelope me-2 pe-1 op-7 fs-6"></i>
+              info@mobileapp.com
+            </div>
+
+            <h6 class="text-white mb-3 pt-2 fw-medium">Get Social</h6>
+            <ul class="d-flex mt-3 mt-sm-0 list-unstyled">
+              <li>
+                <a href="https://twitter.com/bbbootstrap" class="text-lighten-muted link-primary me-4 pb-2">
+                  <i class="fa-brands fa-square-x-twitter fs-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/bbbootstrap/" class="text-lighten-muted me-4 pb-2 link-primary">
+                  <i class="fa-brands fa-square-facebook fs-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/bbbootstrap_/?hl=en"
+                  class="text-lighten-muted me-4 pb-2 link-primary">
+                  <i class="fa-brands fa-square-instagram fs-6 "></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/c/BBBootstrap" class="text-lighten-muted me-4 pb-2 link-primary">
+                  <i class="fa-brands fa-youtube fs-6"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright py-3">
+        <div class="d-block d-md-flex align-items-center justify-content-between">
+          <div>
+            <span class="text-lighten-muted mb-0 fs-4">©Copyright 2023 by Grammar.</span>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <span class="text-lighten-muted fs-4">Privacy - Cookies - Disclaimer</span>
+          </div>
+          <div class="d-flex align-items-center mt-3 mt-md-0">
+            <a href="javascript:void(0)">
+              <img src="../dist/images/download/apple-2.png" class="me-4" alt="">
+            </a>
+
+            <a href="javascript:void(0)">
+              <img src="../dist/images/download/gp-2.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute top-0 start-0 mt-7 d-none d-xl-block">
+      <img src="../dist/images/shape/footer-v3-shapeline.png" alt="" class="img-fluid">
+    </div>
+  </footer>
+  <!-- ------------------------------------- -->
+  <!-- Footer End -->
+  <!-- ------------------------------------- -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="Sign-In" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="false">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0 pb-0 pt-6 justify-content-center">
+          <img src="../dist/images/logo/logo.svg" alt="">
+        </div>
+        <div class="modal-body p-6">
+          <div class="row mt-3">
+            <div class="col-sm-6 px-2">
+              <a href="javascript:void(0)" class="">
+                <button
+                  class="border-1 btn border-light-gray rounded-3 py-2 px-0 w-100 link-primary bg-white d-flex text-lighten-muted align-items-center justify-content-center gap-2">
+                  <img src="../dist/images/download/google.svg" alt="image" class="">
+                  <p class="fw-light fs-4 mb-0">Sign in with Google</p>
+                </button>
+              </a>
+            </div>
+            <div class="col-sm-6 px-2">
+              <a href="javascript:void(0)">
+                <button
+                  class="border-1 btn border-light-gray rounded-3 py-2 px-0 w-100 link-primary bg-white text-lighten-muted d-flex align-items-center justify-content-center gap-2">
+                  <img src="../dist/images/download/facebook.svg" alt="image" class="">
+                  <p class="fw-light fs-4 mb-0">Sign in with FB</p>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <p class="text-center text-lighten-muted fs-4 mt-4 mb-0 fw-light line">
+            or Sign In with
+          </p>
+
+          <form action="">
+            <div class="mt-4 mb-1">
+              <label for="Email" class="fw-medium text-lighten-muted mb-1">Email</label>
+              <input type="email" name="Email" class="w-100 py-2 px-3 rounded-3 form-input" required>
+            </div>
+            <div class="mt-4 mb-1">
+              <label for="Password" class="fw-medium text-lighten-muted mb-1">Password</label>
+              <input type="password" name="Password" class="w-100 py-2 px-3 rounded-3 form-input" required>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <div class="d-flex gap-2">
+                <span class="w-20">
+                  <input type="checkbox" name="Conditions" id="Conditions" class="btn w-100 h-100">
+                </span>
+                <label for="Conditions" class="fs-4 fw-light text-lighten-muted">
+                  Remeber this Device
+                </label>
+              </div>
+              <a href="javascript:void(0)" class="text-primary fs-4 fw-light">Forgot Password ?</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+              <button type="submit" class="btn btn-primary w-100 rounded-3">
+                Sign In
+              </button>
+            </div>
+          </form>
+
+          <p class="text-center mt-3 mb-0 fs-5 fw-light text-lighten-muted">
+            New to Grammer? <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Sign-Up"
+              class="fs-4">Create an
+              account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Sign-Up" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="false">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0 pb-0 pt-6 justify-content-center">
+          <img src="../dist/images/logo/logo.svg" alt="">
+        </div>
+        <div class="modal-body p-6">
+          <div class="row mt-3">
+            <div class="col-sm-6 px-2">
+              <a href="javascript:void(0)" class="">
+                <button
+                  class="border-1 btn border-light-gray rounded-3 py-2 px-0 w-100 link-primary bg-white d-flex text-lighten-muted align-items-center justify-content-center gap-2">
+                  <img src="../dist/images/download/google.svg" alt="image" class="">
+                  <p class="fw-light fs-4 mb-0">Sign up with Google</p>
+                </button>
+              </a>
+            </div>
+            <div class="col-sm-6 px-2">
+              <a href="javascript:void(0)">
+                <button
+                  class="border-1 btn border-light-gray rounded-3 py-2 px-0 w-100 link-primary bg-white text-lighten-muted d-flex align-items-center justify-content-center gap-2">
+                  <img src="../dist/images/download/facebook.svg" alt="image" class="">
+                  <p class="fw-light fs-4 mb-0">Sign up with FB</p>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <p class="text-center text-lighten-muted fs-4 mt-4 mb-0 fw-light line">
+            or Sign Up with
+          </p>
+
+          <form action="">
+            <div class="mt-4 mb-1">
+              <label for="Email" class="fw-medium text-lighten-muted mb-1">Email</label>
+              <input type="email" name="Email" class="w-100 py-2 px-3 rounded-3 form-input" required>
+            </div>
+            <div class="mt-4 mb-1">
+              <label for="Password" class="fw-medium text-lighten-muted mb-1">Password</label>
+              <input type="password" name="Password" class="w-100 py-2 px-3 rounded-3 form-input" required>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <div class="d-flex gap-2">
+                <span class="w-20">
+                  <input type="checkbox" name="Conditions" id="Conditions" class="btn w-100 h-100">
+                </span>
+                <label for="Conditions" class="fs-4 fw-light text-lighten-muted">
+                  Remeber this Device
+                </label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+              <button type="submit" class="btn btn-primary w-100 rounded-3">
+                Sign Up
+              </button>
+            </div>
+          </form>
+
+          <p class="text-center mt-3 mb-0 fs-5 fw-light text-lighten-muted">
+            Already a member? <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Sign-In"
+              class="fs-4">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------- -->
+  <!-- Import Js Files -->
+  <!-- ---------------------------------------------- -->
+  <script src=" ../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../dist/js/custom.js"></script>
+  <script src="../assets/libs/aos/dist/aos.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../dist/js/owl-carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+
+</html>
